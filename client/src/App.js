@@ -1,5 +1,13 @@
 import logo from './logo.svg';
+import axios from 'axios'
 import './App.css';
+
+const appiCall = () => {
+  axios.get('http://localhost:3000/users').then((data)=>
+  {
+    console.log(data)
+  })
+}
 
 function App() {
   return (
@@ -17,6 +25,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={appiCall}>Call Api</button>
       </header>
     </div>
   );
