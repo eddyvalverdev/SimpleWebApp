@@ -3,7 +3,7 @@ import axios from 'axios'
 import './App.css';
 
 const appiCall = () => {
-  axios.get('http://localhost:3000/users').then((data)=>
+  axios.get('http://localhost:3001/todos').then((data)=>
   {
     console.log(data)
   })
